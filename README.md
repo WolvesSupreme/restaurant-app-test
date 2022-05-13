@@ -28,11 +28,12 @@ phpMyAdmin
 
 ## Learn More
 Errores
--> No actualiza las fotos
+-> *No actualiza las fotos*
 -> No se muestra 'Registrar nuevos gastos'
 <br/>
 Errores Solucionados
 ->Registrar campos vacios
 -> Validaciones agregadas
+-> Actualiza la foto
 
 
