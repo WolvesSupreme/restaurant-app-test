@@ -4,7 +4,7 @@ MVC - AJAX
 
 # Client side validation using jQuery validator
 
-pluging JQuery
+plugin jquery
 
 ## Requirements validation
 
