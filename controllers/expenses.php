@@ -1,19 +1,22 @@
 
 <?php
 
-class Expenses extends SessionController{
+class Expenses extends SessionController
+{
 
 
     private $user;
 
-    function __construct(){
+    function __construct()
+    {
         parent::__construct();
 
         $this->user = $this->getUserSessionData();
         error_log("Expenses::constructor() ");
     }
 
-     function render(){
+    function render()
+    {
         error_log("Expenses::RENDER() ");
 
         $this->view->render('expenses/index', [
@@ -23,14 +26,15 @@ class Expenses extends SessionController{
         ]);
     }
 
-    function newExpense(){
+    function newExpense()
+    {
         error_log('Expenses::newExpense()');
-        if(!$this->existPOST(['title', 'amount', 'category', 'date'])){
+        if (!$this->existPOST(['title', 'amount', 'category', 'date'])) {
             $this->redirect('dashboard', ['error' => Errors::ERROR_EXPENSES_NEWEXPENSE_EMPTY]);
             return;
         }
 
-        if($this->user == NULL){
+        if ($this->user == NULL) {
             $this->redirect('dashboard', ['error' => Errors::ERROR_EXPENSES_NEWEXPENSE]);
             return;
         }
@@ -48,15 +52,17 @@ class Expenses extends SessionController{
     }
 
     // new expense UI
-    function create(){
+    function create()
+    {
         $categories = new CategoriesModel();
         $this->view->render('expenses/create', [
             "categories" => $categories->getAll(),
             "user" => $this->user
         ]);
-    } 
+    }
 
-    function getCategoryIds(){
+    function getCategoryIds()
+    {
         $joinExpensesCategoriesModel = new JoinExpensesCategoriesModel();
         $categories = $joinExpensesCategoriesModel->getAll($this->user->getId());
 
@@ -69,18 +75,19 @@ class Expenses extends SessionController{
     }
 
     // crea una lista con los meses donde hay expenses
-    private function getDateList(){
+    private function getDateList()
+    {
         $months = [];
         $res = [];
         $joinExpensesCategoriesModel = new JoinExpensesCategoriesModel();
         $expenses = $joinExpensesCategoriesModel->getAll($this->user->getId());
 
         foreach ($expenses as $expense) {
-            array_push($months, substr($expense->getDate(),0, 7 ));
+            array_push($months, substr($expense->getDate(), 0, 7));
         }
         $months = array_values(array_unique($months));
         //mostrar los últimos 3 meses
-        if(count($months) >3){
+        if (count($months) > 3) {
             array_push($res, array_pop($months));
             array_push($res, array_pop($months));
             array_push($res, array_pop($months));
@@ -89,7 +96,8 @@ class Expenses extends SessionController{
     }
 
     // crea una lista con las categorias donde hay expenses
-    private function getCategoryList(){
+    private function getCategoryList()
+    {
         $res = [];
         $joinExpensesCategoriesModel = new JoinExpensesCategoriesModel();
         $expenses = $joinExpensesCategoriesModel->getAll($this->user->getId());
@@ -103,7 +111,8 @@ class Expenses extends SessionController{
     }
 
     // crea una lista con los colores dependiendo de las categorias
-    private function getCategoryColorList(){
+    private function getCategoryColorList()
+    {
         $res = [];
         $joinExpensesCategoriesModel = new JoinExpensesCategoriesModel();
         $expenses = $joinExpensesCategoriesModel->getAll($this->user->getId());
@@ -117,10 +126,11 @@ class Expenses extends SessionController{
         return $res;
     }
 
-    
+
 
     // devuelve el JSON para las llamadas AJAX
-    function getHistoryJSON(){
+    function getHistoryJSON()
+    {
         header('Content-Type: application/json');
         $res = [];
         $joinExpensesCategories = new JoinExpensesCategoriesModel();
@@ -129,12 +139,12 @@ class Expenses extends SessionController{
         foreach ($expenses as $expense) {
             array_push($res, $expense->toArray());
         }
-        
-        echo json_encode($res);
 
+        echo json_encode($res);
     }
 
-    function getExpensesJSON(){
+    function getExpensesJSON()
+    {
         header('Content-Type: application/json');
 
         $res = [];
@@ -149,45 +159,46 @@ class Expenses extends SessionController{
 
         $months = $this->getDateList();
 
-        for($i = 0; $i < count($months); $i++){
+        for ($i = 0; $i < count($months); $i++) {
             $item = array($months[$i]);
-            for($j = 0; $j < count($categoryIds); $j++){
-                $total = $this->getTotalByMonthAndCategory( $months[$i], $categoryIds[$j]);
-                array_push( $item, $total );
-            }   
+            for ($j = 0; $j < count($categoryIds); $j++) {
+                $total = $this->getTotalByMonthAndCategory($months[$i], $categoryIds[$j]);
+                array_push($item, $total);
+            }
             array_push($res, $item);
         }
 
         array_unshift($res, $categoryNames);
         array_unshift($res, $categoryColors);
-        
+
         echo json_encode($res);
     }
 
-    function getTotalByMonthAndCategory($date, $categoryid){
+    function getTotalByMonthAndCategory($date, $categoryid)
+    {
         $iduser = $this->user->getId();
         $joinExpensesCategoriesModel = new JoinExpensesCategoriesModel();
 
         $total = $joinExpensesCategoriesModel->getTotalByMonthAndCategory($date, $categoryid, $iduser);
-        if($total == NULL) $total = 0;
+        if ($total == NULL) $total = 0;
         return $total;
     }
 
-    function delete($params){
+    function delete($params)
+    {
         error_log("Expenses::delete()");
-        
-        if($params === NULL) $this->redirect('expenses', ['error' => Errors::ERROR_ADMIN_NEWCATEGORY_EXISTS]);
+
+        if ($params === NULL) $this->redirect('expenses', ['error' => Errors::ERROR_ADMIN_NEWCATEGORY_EXISTS]);
         $id = $params[0];
         error_log("Expenses::delete() id = " . $id);
         $res = $this->model->delete($id);
 
-        if($res){
+        if ($res) {
             $this->redirect('expenses', ['success' => Success::SUCCESS_EXPENSES_DELETE]);
-        }else{
+        } else {
             $this->redirect('expenses', ['error' => Errors::ERROR_ADMIN_NEWCATEGORY_EXISTS]);
         }
     }
-
 }
 
 ?>

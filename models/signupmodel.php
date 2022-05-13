@@ -1,8 +1,11 @@
+
 <?php
 
-class SignupModel extends Model{
+class SignupModel extends Model
+{
 
-    public function __construct(){
+    public function __construct()
+    {
         parent::__construct();
     }
 }

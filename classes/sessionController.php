@@ -143,7 +143,7 @@ class SessionController extends Controller{
         $url = '';
         for($i = 0; $i < sizeof($this->sites); $i++){
             if($this->sites[$i]['role'] === $role){
-                $url = '/restaurant_test/'.$this->sites[$i]['site'];
+                $url = 'restaurant_test/'.$this->sites[$i]['site'];
             break;
             }
         }
