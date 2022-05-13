@@ -1,0 +1,231 @@
+[03-May-2022 03:44:59 Europe/Berlin] Hello, errors!
+[03-May-2022 03:45:00 Europe/Berlin] SessionController::validateSession()
+[03-May-2022 03:45:00 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/login/authenticate, url => login
+[03-May-2022 03:45:00 Europe/Berlin] sessionController::isPublic(): currentURL => login
+[03-May-2022 03:45:00 Europe/Berlin] SessionController::validateSession() redirect al login
+[03-May-2022 03:45:00 Europe/Berlin] ExistPOST: Existen parámetros
+[03-May-2022 03:45:00 Europe/Berlin] login: inicio
+[03-May-2022 03:45:00 Europe/Berlin] login: user id 8
+[03-May-2022 03:45:00 Europe/Berlin] login: success
+[03-May-2022 03:45:00 Europe/Berlin] Login::authenticate() passed
+[03-May-2022 03:45:00 Europe/Berlin] sessionController::initialize(): user: giron
+[03-May-2022 03:45:00 Europe/Berlin] sessionController::authorizeAccess(): role: user
+[03-May-2022 03:45:00 Europe/Berlin] Hello, errors!
+[03-May-2022 03:45:00 Europe/Berlin] SessionController::validateSession()
+[03-May-2022 03:45:00 Europe/Berlin] sessionController::getUserSessionData(): giron
+[03-May-2022 03:45:00 Europe/Berlin] sessionController::validateSession(): username:giron - role: user
+[03-May-2022 03:45:00 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/dashboard, url => dashboard
+[03-May-2022 03:45:00 Europe/Berlin] sessionController::isPublic(): currentURL => dashboard
+[03-May-2022 03:45:00 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/dashboard, url => dashboard
+[03-May-2022 03:45:00 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[03-May-2022 03:45:00 Europe/Berlin] sessionController::getUserSessionData(): giron
+[03-May-2022 03:45:00 Europe/Berlin] Dashboard::constructor() 
+[03-May-2022 03:45:00 Europe/Berlin] Dashboard::RENDER() 
+[03-May-2022 03:45:00 Europe/Berlin] Dashboard::getExpenses() id = 8
+[03-May-2022 03:45:00 Europe/Berlin] ExpensesModel::getByUserIdAndLimit(): count: 0
+[03-May-2022 03:45:00 Europe/Berlin] ExpensesModel::getTotalByCategoryThisMonth
+[03-May-2022 03:45:00 Europe/Berlin] ExpensesModel::getTotalByCategoryThisMonth
+[03-May-2022 03:45:00 Europe/Berlin] ExpensesModel::getTotalByCategoryThisMonth
+[03-May-2022 03:45:00 Europe/Berlin] ExpensesModel::getTotalByCategoryThisMonth
+[03-May-2022 03:45:00 Europe/Berlin] ExpensesModel::getTotalByCategoryThisMonth
+[03-May-2022 03:45:11 Europe/Berlin] Hello, errors!
+[03-May-2022 03:45:11 Europe/Berlin] SessionController::validateSession()
+[03-May-2022 03:45:11 Europe/Berlin] sessionController::getUserSessionData(): giron
+[03-May-2022 03:45:11 Europe/Berlin] sessionController::validateSession(): username:giron - role: user
+[03-May-2022 03:45:11 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/user, url => user
+[03-May-2022 03:45:11 Europe/Berlin] sessionController::isPublic(): currentURL => user
+[03-May-2022 03:45:11 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/user, url => user
+[03-May-2022 03:45:11 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[03-May-2022 03:45:11 Europe/Berlin] sessionController::getUserSessionData(): giron
+[03-May-2022 03:45:11 Europe/Berlin] user Jose Estuwar
+[03-May-2022 03:45:11 Europe/Berlin] Hello, errors!
+[03-May-2022 03:45:11 Europe/Berlin] SessionController::validateSession()
+[03-May-2022 03:45:11 Europe/Berlin] sessionController::getUserSessionData(): giron
+[03-May-2022 03:45:11 Europe/Berlin] sessionController::validateSession(): username:giron - role: user
+[03-May-2022 03:45:11 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/user, url => user
+[03-May-2022 03:45:11 Europe/Berlin] sessionController::isPublic(): currentURL => user
+[03-May-2022 03:45:11 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/user, url => user
+[03-May-2022 03:45:11 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[03-May-2022 03:45:11 Europe/Berlin] sessionController::getUserSessionData(): giron
+[03-May-2022 03:45:11 Europe/Berlin] user Jose Estuwar
+[03-May-2022 03:45:23 Europe/Berlin] Hello, errors!
+[03-May-2022 03:45:23 Europe/Berlin] SessionController::validateSession()
+[03-May-2022 03:45:23 Europe/Berlin] sessionController::getUserSessionData(): giron
+[03-May-2022 03:45:23 Europe/Berlin] sessionController::validateSession(): username:giron - role: user
+[03-May-2022 03:45:23 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/logout, url => logout
+[03-May-2022 03:45:23 Europe/Berlin] sessionController::isPublic(): currentURL => logout
+[03-May-2022 03:45:23 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/logout, url => logout
+[03-May-2022 03:45:23 Europe/Berlin] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[03-May-2022 03:45:23 Europe/Berlin] Hello, errors!
+[03-May-2022 03:45:23 Europe/Berlin] SessionController::validateSession()
+[03-May-2022 03:45:23 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/, url => 
+[03-May-2022 03:45:23 Europe/Berlin] sessionController::isPublic(): currentURL => 
+[03-May-2022 03:45:23 Europe/Berlin] SessionController::validateSession() public page
+[03-May-2022 03:45:24 Europe/Berlin] Hello, errors!
+[03-May-2022 03:45:24 Europe/Berlin] SessionController::validateSession()
+[03-May-2022 03:45:24 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/signup, url => signup
+[03-May-2022 03:45:24 Europe/Berlin] sessionController::isPublic(): currentURL => signup
+[03-May-2022 03:45:24 Europe/Berlin] SessionController::validateSession() public page
+[03-May-2022 03:46:26 Europe/Berlin] Hello, errors!
+[03-May-2022 03:53:39 Europe/Berlin] Hello, errors!
+[03-May-2022 03:53:39 Europe/Berlin] SessionController::validateSession()
+[03-May-2022 03:53:39 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/, url => 
+[03-May-2022 03:53:39 Europe/Berlin] sessionController::isPublic(): currentURL => 
+[03-May-2022 03:53:39 Europe/Berlin] SessionController::validateSession() public page
+[03-May-2022 03:53:44 Europe/Berlin] Hello, errors!
+[03-May-2022 03:53:44 Europe/Berlin] SessionController::validateSession()
+[03-May-2022 03:53:44 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/signup, url => signup
+[03-May-2022 03:53:44 Europe/Berlin] sessionController::isPublic(): currentURL => signup
+[03-May-2022 03:53:44 Europe/Berlin] SessionController::validateSession() public page
+[03-May-2022 03:53:46 Europe/Berlin] Hello, errors!
+[03-May-2022 03:53:46 Europe/Berlin] SessionController::validateSession()
+[03-May-2022 03:53:46 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/, url => 
+[03-May-2022 03:53:46 Europe/Berlin] sessionController::isPublic(): currentURL => 
+[03-May-2022 03:53:46 Europe/Berlin] SessionController::validateSession() public page
+[10-May-2022 07:22:21 Europe/Berlin] Hello, errors!
+[10-May-2022 07:22:21 Europe/Berlin] SessionController::validateSession()
+[10-May-2022 07:22:21 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/, url => 
+[10-May-2022 07:22:21 Europe/Berlin] sessionController::isPublic(): currentURL => 
+[10-May-2022 07:22:21 Europe/Berlin] SessionController::validateSession() public page
+[10-May-2022 07:22:27 Europe/Berlin] Hello, errors!
+[10-May-2022 07:22:27 Europe/Berlin] SessionController::validateSession()
+[10-May-2022 07:22:27 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/signup, url => signup
+[10-May-2022 07:22:27 Europe/Berlin] sessionController::isPublic(): currentURL => signup
+[10-May-2022 07:22:27 Europe/Berlin] SessionController::validateSession() public page
+[12-May-2022 07:34:08 Europe/Berlin] Hello, errors!
+[12-May-2022 07:34:08 Europe/Berlin] SessionController::validateSession()
+[12-May-2022 07:34:08 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/, url => 
+[12-May-2022 07:34:08 Europe/Berlin] sessionController::isPublic(): currentURL => 
+[12-May-2022 07:34:08 Europe/Berlin] SessionController::validateSession() public page
+[12-May-2022 07:34:14 Europe/Berlin] Hello, errors!
+[12-May-2022 07:34:14 Europe/Berlin] SessionController::validateSession()
+[12-May-2022 07:34:14 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/signup, url => signup
+[12-May-2022 07:34:14 Europe/Berlin] sessionController::isPublic(): currentURL => signup
+[12-May-2022 07:34:14 Europe/Berlin] SessionController::validateSession() public page
+[12-May-2022 07:34:15 Europe/Berlin] Hello, errors!
+[12-May-2022 07:34:15 Europe/Berlin] SessionController::validateSession()
+[12-May-2022 07:34:15 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/, url => 
+[12-May-2022 07:34:15 Europe/Berlin] sessionController::isPublic(): currentURL => 
+[12-May-2022 07:34:15 Europe/Berlin] SessionController::validateSession() public page
+[12-May-2022 07:34:22 Europe/Berlin] Hello, errors!
+[12-May-2022 07:34:22 Europe/Berlin] SessionController::validateSession()
+[12-May-2022 07:34:22 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/login/authenticate, url => login
+[12-May-2022 07:34:22 Europe/Berlin] sessionController::isPublic(): currentURL => login
+[12-May-2022 07:34:22 Europe/Berlin] SessionController::validateSession() redirect al login
+[12-May-2022 07:34:22 Europe/Berlin] ExistPOST: Existen parámetros
+[12-May-2022 07:34:22 Europe/Berlin] Login::authenticate() empty
+[12-May-2022 07:34:22 Europe/Berlin] Hello, errors!
+[12-May-2022 07:34:22 Europe/Berlin] SessionController::validateSession()
+[12-May-2022 07:34:22 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/?error=2194ac064912be67fc164539dc435a42, url => ?error=2194ac064912be67fc164539dc435a42
+[12-May-2022 07:34:22 Europe/Berlin] sessionController::isPublic(): currentURL => ?error=2194ac064912be67fc164539dc435a42
+[12-May-2022 07:34:22 Europe/Berlin] SessionController::validateSession() public page
+[12-May-2022 07:34:22 Europe/Berlin] View::handleError() existsKey =>Los parámetros para autenticar no pueden estar vacíos
+[12-May-2022 07:34:28 Europe/Berlin] Hello, errors!
+[12-May-2022 07:34:28 Europe/Berlin] SessionController::validateSession()
+[12-May-2022 07:34:28 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/, url => 
+[12-May-2022 07:34:28 Europe/Berlin] sessionController::isPublic(): currentURL => 
+[12-May-2022 07:34:28 Europe/Berlin] SessionController::validateSession() public page
+[13-May-2022 00:08:32 Europe/Berlin] Hello, errors!
+[13-May-2022 00:08:32 Europe/Berlin] SessionController::validateSession()
+[13-May-2022 00:08:32 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/signup, url => signup
+[13-May-2022 00:08:32 Europe/Berlin] sessionController::isPublic(): currentURL => signup
+[13-May-2022 00:08:32 Europe/Berlin] SessionController::validateSession() public page
+[13-May-2022 00:08:43 Europe/Berlin] Hello, errors!
+[13-May-2022 00:08:43 Europe/Berlin] SessionController::validateSession()
+[13-May-2022 00:08:43 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/signup, url => signup
+[13-May-2022 00:08:43 Europe/Berlin] sessionController::isPublic(): currentURL => signup
+[13-May-2022 00:08:43 Europe/Berlin] SessionController::validateSession() public page
+[13-May-2022 00:09:05 Europe/Berlin] Hello, errors!
+[13-May-2022 00:09:05 Europe/Berlin] SessionController::validateSession()
+[13-May-2022 00:09:05 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/signup, url => signup
+[13-May-2022 00:09:05 Europe/Berlin] sessionController::isPublic(): currentURL => signup
+[13-May-2022 00:09:05 Europe/Berlin] SessionController::validateSession() public page
+[13-May-2022 00:09:54 Europe/Berlin] Hello, errors!
+[13-May-2022 00:09:54 Europe/Berlin] SessionController::validateSession()
+[13-May-2022 00:09:54 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/, url => 
+[13-May-2022 00:09:54 Europe/Berlin] sessionController::isPublic(): currentURL => 
+[13-May-2022 00:09:54 Europe/Berlin] SessionController::validateSession() public page
+[13-May-2022 00:09:57 Europe/Berlin] Hello, errors!
+[13-May-2022 00:09:57 Europe/Berlin] SessionController::validateSession()
+[13-May-2022 00:09:57 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/signup, url => signup
+[13-May-2022 00:09:57 Europe/Berlin] sessionController::isPublic(): currentURL => signup
+[13-May-2022 00:09:57 Europe/Berlin] SessionController::validateSession() public page
+[13-May-2022 02:20:40 Europe/Berlin] Hello, errors!
+[13-May-2022 02:20:40 Europe/Berlin] SessionController::validateSession()
+[13-May-2022 02:20:40 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/, url => 
+[13-May-2022 02:20:40 Europe/Berlin] sessionController::isPublic(): currentURL => 
+[13-May-2022 02:20:40 Europe/Berlin] SessionController::validateSession() public page
+[13-May-2022 02:20:47 Europe/Berlin] Hello, errors!
+[13-May-2022 02:20:47 Europe/Berlin] SessionController::validateSession()
+[13-May-2022 02:20:47 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/login/authenticate, url => login
+[13-May-2022 02:20:47 Europe/Berlin] sessionController::isPublic(): currentURL => login
+[13-May-2022 02:20:47 Europe/Berlin] SessionController::validateSession() redirect al login
+[13-May-2022 02:20:47 Europe/Berlin] ExistPOST: Existen parámetros
+[13-May-2022 02:20:47 Europe/Berlin] login: inicio
+[13-May-2022 02:20:47 Europe/Berlin] login: user id 8
+[13-May-2022 02:20:47 Europe/Berlin] login: success
+[13-May-2022 02:20:47 Europe/Berlin] Login::authenticate() passed
+[13-May-2022 02:20:47 Europe/Berlin] sessionController::initialize(): user: giron
+[13-May-2022 02:20:47 Europe/Berlin] sessionController::authorizeAccess(): role: user
+[13-May-2022 02:20:47 Europe/Berlin] Hello, errors!
+[13-May-2022 02:20:47 Europe/Berlin] SessionController::validateSession()
+[13-May-2022 02:20:47 Europe/Berlin] sessionController::getUserSessionData(): giron
+[13-May-2022 02:20:47 Europe/Berlin] sessionController::validateSession(): username:giron - role: user
+[13-May-2022 02:20:47 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/dashboard, url => dashboard
+[13-May-2022 02:20:47 Europe/Berlin] sessionController::isPublic(): currentURL => dashboard
+[13-May-2022 02:20:47 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/dashboard, url => dashboard
+[13-May-2022 02:20:47 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[13-May-2022 02:20:47 Europe/Berlin] sessionController::getUserSessionData(): giron
+[13-May-2022 02:20:47 Europe/Berlin] Dashboard::constructor() 
+[13-May-2022 02:20:47 Europe/Berlin] Dashboard::RENDER() 
+[13-May-2022 02:20:47 Europe/Berlin] Dashboard::getExpenses() id = 8
+[13-May-2022 02:20:47 Europe/Berlin] ExpensesModel::getByUserIdAndLimit(): count: 0
+[13-May-2022 02:20:47 Europe/Berlin] ExpensesModel::getTotalByCategoryThisMonth
+[13-May-2022 02:20:47 Europe/Berlin] ExpensesModel::getTotalByCategoryThisMonth
+[13-May-2022 02:20:47 Europe/Berlin] ExpensesModel::getTotalByCategoryThisMonth
+[13-May-2022 02:20:47 Europe/Berlin] ExpensesModel::getTotalByCategoryThisMonth
+[13-May-2022 02:20:47 Europe/Berlin] ExpensesModel::getTotalByCategoryThisMonth
+[13-May-2022 02:24:19 Europe/Berlin] Hello, errors!
+[13-May-2022 02:24:19 Europe/Berlin] SessionController::validateSession()
+[13-May-2022 02:24:19 Europe/Berlin] sessionController::getUserSessionData(): giron
+[13-May-2022 02:24:19 Europe/Berlin] sessionController::validateSession(): username:giron - role: user
+[13-May-2022 02:24:19 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/user, url => user
+[13-May-2022 02:24:19 Europe/Berlin] sessionController::isPublic(): currentURL => user
+[13-May-2022 02:24:19 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/user, url => user
+[13-May-2022 02:24:19 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[13-May-2022 02:24:19 Europe/Berlin] sessionController::getUserSessionData(): giron
+[13-May-2022 02:24:19 Europe/Berlin] user Jose Estuwar
+[13-May-2022 02:24:24 Europe/Berlin] Hello, errors!
+[13-May-2022 02:24:24 Europe/Berlin] SessionController::validateSession()
+[13-May-2022 02:24:24 Europe/Berlin] sessionController::getUserSessionData(): giron
+[13-May-2022 02:24:24 Europe/Berlin] sessionController::validateSession(): username:giron - role: user
+[13-May-2022 02:24:24 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/expenses, url => expenses
+[13-May-2022 02:24:24 Europe/Berlin] sessionController::isPublic(): currentURL => expenses
+[13-May-2022 02:24:24 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/expenses, url => expenses
+[13-May-2022 02:24:24 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[13-May-2022 02:24:24 Europe/Berlin] sessionController::getUserSessionData(): giron
+[13-May-2022 02:24:24 Europe/Berlin] Expenses::constructor() 
+[13-May-2022 02:24:24 Europe/Berlin] Expenses::RENDER() 
+[13-May-2022 02:24:25 Europe/Berlin] Hello, errors!
+[13-May-2022 02:24:25 Europe/Berlin] SessionController::validateSession()
+[13-May-2022 02:24:25 Europe/Berlin] sessionController::getUserSessionData(): giron
+[13-May-2022 02:24:25 Europe/Berlin] sessionController::validateSession(): username:giron - role: user
+[13-May-2022 02:24:25 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/dashboard, url => dashboard
+[13-May-2022 02:24:25 Europe/Berlin] sessionController::isPublic(): currentURL => dashboard
+[13-May-2022 02:24:25 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/dashboard, url => dashboard
+[13-May-2022 02:24:25 Europe/Berlin] SessionController::validateSession() => autorizado, lo deja pasar
+[13-May-2022 02:24:25 Europe/Berlin] sessionController::getUserSessionData(): giron
+[13-May-2022 02:24:25 Europe/Berlin] Dashboard::constructor() 
+[13-May-2022 02:24:25 Europe/Berlin] Dashboard::RENDER() 
+[13-May-2022 02:24:25 Europe/Berlin] Dashboard::getExpenses() id = 8
+[13-May-2022 02:24:25 Europe/Berlin] ExpensesModel::getByUserIdAndLimit(): count: 0
+[13-May-2022 02:24:25 Europe/Berlin] ExpensesModel::getTotalByCategoryThisMonth
+[13-May-2022 02:24:25 Europe/Berlin] ExpensesModel::getTotalByCategoryThisMonth
+[13-May-2022 02:24:25 Europe/Berlin] ExpensesModel::getTotalByCategoryThisMonth
+[13-May-2022 02:24:25 Europe/Berlin] ExpensesModel::getTotalByCategoryThisMonth
+[13-May-2022 02:24:25 Europe/Berlin] ExpensesModel::getTotalByCategoryThisMonth
+[13-May-2022 03:45:02 Europe/Berlin] Hello, errors!
+[13-May-2022 03:45:02 Europe/Berlin] SessionController::validateSession()
+[13-May-2022 03:45:02 Europe/Berlin] sessionController::getCurrentPage(): actualLink =>/restaurant_test/, url => 
+[13-May-2022 03:45:02 Europe/Berlin] sessionController::isPublic(): currentURL => 
+[13-May-2022 03:45:02 Europe/Berlin] SessionController::validateSession() public page

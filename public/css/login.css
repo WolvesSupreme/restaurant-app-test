@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Taviraj:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap");
+
+:root {
+  --title-fonts: "Ubuntu", sans-serif;
+  --parrafos-fonts: "Taviraj", serif;
+  --color: #6c63ff;
+}
+body {
+  background: transparent !important;
+}
+#login-items {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.login-left-col {
+  flex-basis: 50%;
+}
+.login-left-col img {
+  width: 100%;
+}
+.login-right-col {
+  flex-basis: 50%;
+}
+.login-title {
+  max-width: 500px;
+  margin-right: 100px;
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+  margin-left: 150px;
+  font-family: var(--title-fonts);
+}
+
+/* Form */
+.login-form {
+  max-width: 450px;
+  margin: 10px 0;
+  margin-left: 150px;
+}
+label {
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: block;
+  float: center;
+  font-family: "Overpass", sans-serif;
+  text-transform: uppercase;
+}
+input {
+  width: 100%;
+  padding: 12px 10px;
+  margin-bottom: 5px;
+  outline: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  border: 2px solid #6c63ff;
+  font-family: var(--parrafos-fonts);
+  font-size: 1em;
+}
+input::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+input:focus {
+  outline: 0;
+  border: 1px solid #97d848;
+}
+p {
+  color: #333;
+  font-weight: 300;
+  font-family: var(--parrafos-fonts);
+  text-align: right;
+}
+a {
+  text-decoration: none;
+  color: #6c63ff;
+}
+/* Button */
+button {
+  font-family: inherit;
+  display: inline-block;
+  background: transparent;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--color);
+  text-transform: uppercase;
+  letter-spacing:0.1rem;
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+button:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+button:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+button:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+button:active:before {
+  background: #3a0ca3;
+  transition: background 0s;
+}

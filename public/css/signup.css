@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Taviraj:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap");
+
+:root {
+  --color: #6c63ff;
+}
+body{
+  background : transparent;
+}
+
+#signup {
+  padding: 100px 0;
+}
+.caja {
+  margin-right: 100px;
+  margin-left: 100px;
+}
+.signup-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.signup-left-col {
+  flex-basis: 50%;
+}
+.signup-right-col {
+  flex-basis: 50%;
+}
+.signup-right-col img {
+  width: 100%;
+}
+.signup-title {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+  margin-left: 15px;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+/* Form */
+.signup-form {
+  max-width: 350px;
+  margin: 30px 0;
+}
+/* --label */
+label {
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: block;
+  float: center;
+  font-family: "Overpass", sans-serif;
+  text-transform: uppercase;
+}
+/* --input */
+.form-control {
+  width: 100%;
+  padding: 12px 10px;
+  margin-top: 0;
+  outline: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  border: 2px solid #6c63ff;
+  font-family: "Taviraj", serif;
+  font-size: 1em;
+}
+.form-control::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+.form-control:focus {
+  outline: 0;
+  border: 1px solid #97d848;
+}
+
+p {
+  text-align: right;
+  color: #333;
+  font-family: "Overpass", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #6c63ff;
+}
+
+/* button */
+button {
+  font-family: inherit;
+  display: inline-block;
+  background: transparent;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--color);
+  text-transform: uppercase;
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+button:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+button:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+button:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+button:active:before {
+  background: #3a0ca3;
+  transition: background 0s;
+}
+
+/* Responsive */
+@media only screen and (max-width: 770px) {
+  #signup {
+    padding: 20px 0;
+  }
+  .caja {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .signup-left-col {
+    flex-basis: 100%;
+  }
+  .signup-right-col {
+    flex-basis: 100%;
+    margin-top: 50px;
+  }
+  .signup-right-col img {
+    width: 500px;
+    margin-left: 70px;
+  }
+  .signup-form {
+    width: 100%;
+    margin: auto;
+  }
+  .signup-title {
+    margin-left: 20px;
+  }
+}
