@@ -27,16 +27,6 @@ Include the above two CDN links just before closing the body tag
 phpMyAdmin 
 
 ## Learn More
-Errores
 
-Ningun error hasta el momento 
-
-<br/>
-Errores Solucionados<br/>
-->Registrar campos vacios<br/>
--> Validaciones agregadas<br/>
--> Actualiza la foto<br/>
--> Muestra 'Registrar nuevos gastos'<br/>
--> Se visualiza el historial de los gastos<br/>
-
+![Expenses App](https://user-images.githubusercontent.com/61514146/168408578-c97688dd-0db6-402f-9cdc-ecfce8f3eda0.png)
 
