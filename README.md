@@ -28,12 +28,13 @@ phpMyAdmin
 
 ## Learn More
 Errores
--> *No actualiza las fotos*
--> No se muestra 'Registrar nuevos gastos'
+-> En 'Expenses' no se nuestra el historial
+
 <br/>
 Errores Solucionados
 ->Registrar campos vacios
 -> Validaciones agregadas
 -> Actualiza la foto
+-> Muestra 'Registrar nuevos gastos'
 
 
