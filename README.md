@@ -33,10 +33,10 @@ Ningun error hasta el momento
 
 <br/>
 Errores Solucionados<br/>
-->Registrar campos vacios
--> Validaciones agregadas
--> Actualiza la foto
--> Muestra 'Registrar nuevos gastos'
--> Se visualiza el historial de los gastos
+->Registrar campos vacios<br/>
+-> Validaciones agregadas<br/>
+-> Actualiza la foto<br/>
+-> Muestra 'Registrar nuevos gastos'<br/>
+-> Se visualiza el historial de los gastos<br/>
 
 
