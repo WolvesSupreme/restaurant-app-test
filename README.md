@@ -32,7 +32,7 @@ Errores
 Ningun error hasta el momento 
 
 <br/>
-Errores Solucionados
+Errores Solucionados<br/>
 ->Registrar campos vacios
 -> Validaciones agregadas
 -> Actualiza la foto
