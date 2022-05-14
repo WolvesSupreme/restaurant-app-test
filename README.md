@@ -28,7 +28,8 @@ phpMyAdmin
 
 ## Learn More
 Errores
--> En 'Expenses' no se nuestra el historial
+
+Ningun error hasta el momento 
 
 <br/>
 Errores Solucionados
@@ -36,5 +37,6 @@ Errores Solucionados
 -> Validaciones agregadas
 -> Actualiza la foto
 -> Muestra 'Registrar nuevos gastos'
+-> Se visualiza el historial de los gastos
 
 
