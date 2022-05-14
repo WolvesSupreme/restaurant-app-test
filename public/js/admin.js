@@ -37,6 +37,6 @@ btnCategory.addEventListener('click', async e =>{
 });
 
 async function getContent(){
-  const html = await fetch('http://localhost:8080/restaurant_test/admin/createCategory').then(res => res.text());
+  const html = await fetch('http://localhost:82/restaurant_test/admin/createCategory').then(res => res.text());
   return html;
 }
